@@ -1,0 +1,47 @@
+.custom-btn1 {
+    background-color: #1B4242; /* Green */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border: 1px solid white;
+  }
+  
+  .custom-btn1:hover {
+    background-color: #092635; /* Darker green */
+  }
+  .custom-btn2 {
+    background-color: #A0153E; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border: 1px solid white;
+  }
+  
+  .custom-btn2:hover {
+    background-color: #5D0E41; 
+  }
+  .custom-btn3 {
+    background-color: #5F374B; /* Green */
+      border-radius: 50%;
+      width: 20px;
+    height: 20px;
+    margin: 2px;
+    border: 1px solid white;  }
+  
+  .custom-btn3:hover {
+    background-color: #430A5D; /* Darker green */
+  }
+  .custom-btn4 {
+    background-color: #232D3F; /* Green */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border: 1px solid white;  }
+  
+  .custom-btn4:hover {
+    background-color: #0F0F0F; /* Darker green */
+  }
+  
