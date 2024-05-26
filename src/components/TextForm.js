@@ -47,13 +47,15 @@ export default function TextForm(props) {
 <div className="mb-3">
   <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor:props.mode==='dark'?'#1a191a':`white` , color:props.mode==='dark'?'white':`#3a133e`}} id="myBox" rows="7"></textarea>
 </div>
-    <button className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to Uppercase</button>
-    <button className="btn btn-info mx-1  " onClick={handleLoClick}>Convert to Lowercase</button>
-    <button className="btn btn-warning mx-1 " onClick={handleclearClick}>Clear text area</button>
-    <button className="btn btn-secondary mx-1 " onClick={handleCopyClick}>Copy to clipboard</button>
-    <button className="btn btn-success mx-1 " onClick={handleExtraClick}>remove extra spaces</button>
-
-
+<div className="container">
+    <div className="d-flex flex-wrap justify-content-between">
+        <button className="btn btn-primary m-1 flex-fill" onClick={handleUpClick}>Convert to Uppercase</button>
+        <button className="btn btn-info m-1 flex-fill" onClick={handleLoClick}>Convert to Lowercase</button>
+        <button className="btn btn-warning m-1 flex-fill" onClick={handleclearClick}>Clear text area</button>
+        <button className="btn btn-secondary m-1 flex-fill" onClick={handleCopyClick}>Copy to clipboard</button>
+        <button className="btn btn-success m-1 flex-fill" onClick={handleExtraClick}>Remove extra spaces</button>
+    </div>
+</div>
 
 
     </div>
