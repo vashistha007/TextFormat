@@ -44,4 +44,17 @@
   .custom-btn4:hover {
     background-color: #0F0F0F; /* Darker green */
   }
+
   
+  
+  .navbar-toggler-custom {
+    background-color: gray; /* Bootstrap's dark color */
+    border: none; /* Remove border */
+    padding: 0.5rem 1rem; /* Add some padding */
+    border-radius: 0.25rem; /* Rounded corners */
+}
+.navbar-toggler-custom .navbar-toggler-icon {
+    width: 1.5em; /* Custom size */
+    height: 1.5em; /* Custom size */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
