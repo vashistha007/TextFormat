@@ -24,11 +24,11 @@ export default function Navbar(props) {
        
       </ul>
       
-      <div class="btn-group me-5" role="group" aria-label="First group">
-    <button type="button" class=" custom-btn1 " onClick={props.firstcolor}></button>
-    <button type="button" class= "custom-btn2" onClick={props.secondcolor}></button>
-    <button type="button" class=" custom-btn3" onClick={props.thirdcolor}></button>
-    <button type="button" class="custom-btn4" onClick={props.forthcolor}></button>
+      <div className="btn-group me-5" role="group" aria-label="First group">
+    <button type="button" className=" custom-btn1 " onClick={props.firstcolor}></button>
+    <button type="button" className= "custom-btn2" onClick={props.secondcolor}></button>
+    <button type="button" className=" custom-btn3" onClick={props.thirdcolor}></button>
+    <button type="button" className="custom-btn4" onClick={props.forthcolor}></button>
   </div>
 
       <div className={`form-check form-switch ms-3 text-${props.mode===`light`?'dark':'light'}`}>

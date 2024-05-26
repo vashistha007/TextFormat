@@ -49,11 +49,11 @@ export default function TextForm(props) {
 </div>
 <div className="container">
     <div className="d-flex flex-wrap justify-content-between">
-        <button className="btn btn-primary m-1 flex-fill" onClick={handleUpClick}>Convert to Uppercase</button>
-        <button className="btn btn-info m-1 flex-fill" onClick={handleLoClick}>Convert to Lowercase</button>
-        <button className="btn btn-warning m-1 flex-fill" onClick={handleclearClick}>Clear text area</button>
-        <button className="btn btn-secondary m-1 flex-fill" onClick={handleCopyClick}>Copy to clipboard</button>
-        <button className="btn btn-success m-1 flex-fill" onClick={handleExtraClick}>Remove extra spaces</button>
+        <button className="btn btn-primary m-1 flex-fill" disabled={text.length===0} onClick={handleUpClick}>Convert to Uppercase</button>
+        <button className="btn btn-info m-1 flex-fill" disabled={text.length===0} onClick={handleLoClick}>Convert to Lowercase</button>
+        <button className="btn btn-warning m-1 flex-fill" disabled={text.length===0}  onClick={handleclearClick}>Clear text area</button>
+        <button className="btn btn-secondary m-1 flex-fill" disabled={text.length===0} onClick={handleCopyClick}>Copy to clipboard</button>
+        <button className="btn btn-success m-1 flex-fill" disabled={text.length===0} onClick={handleExtraClick}>Remove extra spaces</button>
     </div>
 </div>
 
@@ -62,10 +62,10 @@ export default function TextForm(props) {
 
     <div className='container my-3' style={{color:props.mode==='dark'?'white':`#3a133e`}}>
         <h3>Your text Summary</h3>
-        <p>{text.split(" ").length-1} words and {text.length} charactoers</p>
-        <p>{0.008*(text.split(" ").length-1)} Minutes to read</p>
+        <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} charactoers</p>
+        <p>{0.008*(text.split(" ").filter((element)=>{return element.length!==0}).length)} Minutes to read</p>
         <h3>Preview</h3>
-        <p>{text.length>0?text:"Enter something in the textbox"}</p>
+        <p>{text.length>0?text:"Nothing to Preview"}</p>
     
     </div>
 
