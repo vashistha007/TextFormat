@@ -5,9 +5,7 @@ export default function About() {
     <>
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
-          {/* <div className="carousel-item active -14">
-            <img src="https://images.pexels.com/photos/23169741/pexels-photo-23169741/free-photo-of-a-green-plant-growing-on-a-wall.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" className="d-block w-100" alt="Slide 1" />
-          </div> */}
+        
           <div className="carousel-item -14">
             <img src="https://images.pexels.com/photos/23623513/pexels-photo-23623513/free-photo-of-yard.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" className="d-block w-100" alt="Slide 2" />
           </div>
